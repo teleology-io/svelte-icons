@@ -1,0 +1,179 @@
+{
+	"name": "@teleology/svelte-icons",
+	"version": "0.0.1",
+	"license": "MIT",
+	"description": "A slim wrapper around numerous populare svg icons for Svelte 5",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "svelte-package",
+		"one": "svelte-package -t -i src/lib/fi -o dist/fi",
+		"two": "svelte-package -t -i src/lib/ai -o dist/ai",
+		"prepare": "svelte-kit sync && svelte-package && publint",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+	},
+	"files": [
+		"dist/*"
+	],
+	"sideEffects": false,
+	"type": "module",
+	"exports": {
+		"./.": {
+			"types": "./dist/./index.d.ts",
+			"svelte": "./dist/./index.js",
+			"require": "./dist/./index.js",
+			"import": "./dist/./index.js",
+			"default": "./dist/./index.js"
+		},
+		"./ph": {
+			"types": "./dist/ph/index.d.ts",
+			"svelte": "./dist/ph/index.js",
+			"require": "./dist/ph/index.js",
+			"import": "./dist/ph/index.js",
+			"default": "./dist/ph/index.js"
+		},
+		"./ai": {
+			"types": "./dist/ai/index.d.ts",
+			"svelte": "./dist/ai/index.js",
+			"require": "./dist/ai/index.js",
+			"import": "./dist/ai/index.js",
+			"default": "./dist/ai/index.js"
+		},
+		"./fa": {
+			"types": "./dist/fa/index.d.ts",
+			"svelte": "./dist/fa/index.js",
+			"require": "./dist/fa/index.js",
+			"import": "./dist/fa/index.js",
+			"default": "./dist/fa/index.js"
+		},
+		"./ti": {
+			"types": "./dist/ti/index.d.ts",
+			"svelte": "./dist/ti/index.js",
+			"require": "./dist/ti/index.js",
+			"import": "./dist/ti/index.js",
+			"default": "./dist/ti/index.js"
+		},
+		"./ta": {
+			"types": "./dist/ta/index.d.ts",
+			"svelte": "./dist/ta/index.js",
+			"require": "./dist/ta/index.js",
+			"import": "./dist/ta/index.js",
+			"default": "./dist/ta/index.js"
+		},
+		"./go": {
+			"types": "./dist/go/index.d.ts",
+			"svelte": "./dist/go/index.js",
+			"require": "./dist/go/index.js",
+			"import": "./dist/go/index.js",
+			"default": "./dist/go/index.js"
+		},
+		"./gi": {
+			"types": "./dist/gi/index.d.ts",
+			"svelte": "./dist/gi/index.js",
+			"require": "./dist/gi/index.js",
+			"import": "./dist/gi/index.js",
+			"default": "./dist/gi/index.js"
+		},
+		"./di": {
+			"types": "./dist/di/index.d.ts",
+			"svelte": "./dist/di/index.js",
+			"require": "./dist/di/index.js",
+			"import": "./dist/di/index.js",
+			"default": "./dist/di/index.js"
+		},
+		"./vsc": {
+			"types": "./dist/vsc/index.d.ts",
+			"svelte": "./dist/vsc/index.js",
+			"require": "./dist/vsc/index.js",
+			"import": "./dist/vsc/index.js",
+			"default": "./dist/vsc/index.js"
+		},
+		"./cg": {
+			"types": "./dist/cg/index.d.ts",
+			"svelte": "./dist/cg/index.js",
+			"require": "./dist/cg/index.js",
+			"import": "./dist/cg/index.js",
+			"default": "./dist/cg/index.js"
+		},
+		"./bx": {
+			"types": "./dist/bx/index.d.ts",
+			"svelte": "./dist/bx/index.js",
+			"require": "./dist/bx/index.js",
+			"import": "./dist/bx/index.js",
+			"default": "./dist/bx/index.js"
+		},
+		"./io": {
+			"types": "./dist/io/index.d.ts",
+			"svelte": "./dist/io/index.js",
+			"require": "./dist/io/index.js",
+			"import": "./dist/io/index.js",
+			"default": "./dist/io/index.js"
+		},
+		"./wi": {
+			"types": "./dist/wi/index.d.ts",
+			"svelte": "./dist/wi/index.js",
+			"require": "./dist/wi/index.js",
+			"import": "./dist/wi/index.js",
+			"default": "./dist/wi/index.js"
+		},
+		"./bs": {
+			"types": "./dist/bs/index.d.ts",
+			"svelte": "./dist/bs/index.js",
+			"require": "./dist/bs/index.js",
+			"import": "./dist/bs/index.js",
+			"default": "./dist/bs/index.js"
+		},
+		"./fi": {
+			"types": "./dist/fi/index.d.ts",
+			"svelte": "./dist/fi/index.js",
+			"require": "./dist/fi/index.js",
+			"import": "./dist/fi/index.js",
+			"default": "./dist/fi/index.js"
+		},
+		"./si": {
+			"types": "./dist/si/index.d.ts",
+			"svelte": "./dist/si/index.js",
+			"require": "./dist/si/index.js",
+			"import": "./dist/si/index.js",
+			"default": "./dist/si/index.js"
+		},
+		"./hi": {
+			"types": "./dist/hi/index.d.ts",
+			"svelte": "./dist/hi/index.js",
+			"require": "./dist/hi/index.js",
+			"import": "./dist/hi/index.js",
+			"default": "./dist/hi/index.js"
+		},
+		"./co": {
+			"types": "./dist/co/index.d.ts",
+			"svelte": "./dist/co/index.js",
+			"require": "./dist/co/index.js",
+			"import": "./dist/co/index.js",
+			"default": "./dist/co/index.js"
+		},
+		"./lu": {
+			"types": "./dist/lu/index.d.ts",
+			"svelte": "./dist/lu/index.js",
+			"require": "./dist/lu/index.js",
+			"import": "./dist/lu/index.js",
+			"default": "./dist/lu/index.js"
+		}
+	},	
+	"peerDependencies": {
+		"svelte": "^5.0.0"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/package": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^4.0.0",
+		"@teleology/slim": "^3.0.6",
+		"cheerio": "^1.0.0",
+		"glob": "^11.0.1",
+		"publint": "^0.2.0",
+		"svelte": "^5.0.0",
+		"svelte-check": "^4.0.0",
+		"typescript": "^5.0.0",
+		"vite": "^5.4.11"
+	}
+}
