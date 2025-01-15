@@ -4,13 +4,7 @@
 	"license": "MIT",
 	"description": "A slim wrapper around numerous populare svg icons for Svelte 5",
 	"scripts": {
-		"dev": "vite dev",
-		"build": "svelte-package",
-		"one": "svelte-package -t -i src/lib/fi -o dist/fi",
-		"two": "svelte-package -t -i src/lib/ai -o dist/ai",
-		"prepare": "svelte-kit sync && svelte-package && publint",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"dev": "vite dev"
 	},
 	"files": [
 		"dist/*"
