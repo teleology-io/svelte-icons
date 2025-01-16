@@ -27,10 +27,10 @@ for (const module of modules) {
       const pk = fs.readFileSync(iconModuleDir, 'utf8')
       const { license, version } = JSON.parse(pk)
       
-      output.push(`| ${[link, module.license || license, module.version || version, files.length - 2].join(' | ')} |`)
+      output.push(`| ${[link, module.id, module.license || license, module.version || version, files.length - 2].join(' | ')} |`)
     } catch (e) {
       console.error(`module ${module.id} failed to load package.json`)
-      output.push(`| ${[link, module.license, module.version, files.length - 2].join(' | ')} |`)
+      output.push(`| ${[link, module.id, module.license, module.version, files.length - 2].join(' | ')} |`)
     }
 	}
 }

@@ -43,6 +43,15 @@ const EXPORT_TMP = `<script lang="ts">
   {/await}
 {/if}`
 
+const EXPORT_D_S = `import type { SVGAttributes } from "svelte/elements";
+declare const Index: import("svelte").Component<SVGAttributes<any> & {
+    title?: string;
+    size?: string;
+    icon: {{names}};
+}, {}, "">;
+type Index = ReturnType<typeof Index>;
+export default Index;`
+
 function kebab(v) {
   return v
     .replace(/[^a-zA-Z0-9\s]/g, '-')?.toLowerCase()
@@ -84,6 +93,9 @@ for (const module of modules) {
 
     fs.writeFileSync(path.resolve(OUTPUT_DIR, module.id, `index.svelte`), slim(EXPORT_TMP, {
       loaders: lazy.join('\n')
+    }), 'utf8');
+    fs.writeFileSync(path.resolve(OUTPUT_DIR, module.id, `index.svelte.d.ts`), slim(EXPORT_D_S, {
+      names: names.map((v) => `"${v}"`).join(' | ')
     }), 'utf8');
 
 

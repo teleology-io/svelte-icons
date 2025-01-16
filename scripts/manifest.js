@@ -48,6 +48,7 @@ export const modules = [
 		type: 'git',
 		url: 'https://github.com/tabler/tabler-icons',
 		sparse: 'icons',
+		license: 'MIT',
 	},
 	{
 		id: 'go',
@@ -57,6 +58,7 @@ export const modules = [
 		sparse: 'icons',
 		pattern: '/**/*-24.svg',
 		replace: '-24.svg',
+		license: 'MIT',
 	},
 	{
 		id: 'gi',
@@ -73,6 +75,7 @@ export const modules = [
 		name: 'DevIcons',
 		url: 'https://github.com/vorillaz/devicons',
 		sparse: '!SVG',
+		license: 'MIT',
 	},
 	{
 		id: 'vsc',
