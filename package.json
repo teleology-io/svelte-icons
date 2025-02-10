@@ -1,6 +1,6 @@
 {
 	"name": "@teleology/svelte-icons",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"license": "MIT",
 	"description": "A slim wrapper around numerous populare svg icons for Svelte 5",
 	"scripts": {
