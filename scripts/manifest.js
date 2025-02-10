@@ -49,6 +49,16 @@ export const modules = [
 		url: 'https://github.com/tabler/tabler-icons',
 		sparse: 'icons',
 		license: 'MIT',
+		formatter: ({ kebab, parsedFile }) => {
+			if (parsedFile.dir.indexOf('outline') !== -1) {
+				return kebab(parsedFile.name) + '-outline'
+			}
+			if (parsedFile.dir.indexOf('filled') !== -1) {
+				return kebab(parsedFile.name) + '-filled'
+			}
+
+			return parsedFile.name
+		},
 	},
 	{
 		id: 'go',
